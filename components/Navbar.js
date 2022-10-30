@@ -87,9 +87,9 @@ const Navbar = () => {
               </div>
             </div>
             <div className="space-y-1 px-2 pt-2 pb-3">
-              {navigation.map((item) => (
+              {navigation.map((item, index) => (
                 <a
-                  key={item.name}
+                  key={index}
                   href={item.href}
                   className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900"
                 >
