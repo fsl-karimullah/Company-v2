@@ -7,7 +7,7 @@ import Image from "next/image";
 import Card from "./Card";
 import react, { useState } from "react";
 import Footer from "./Footer";
-export default function Dashboard() {
+const Dashboard = () => {
   const [dataDummy, setdataDummy] = useState([
     {
       id: 1,
@@ -49,7 +49,7 @@ export default function Dashboard() {
             <main className="mx-auto mt-10 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
               <div className="sm:text-center lg:text-left">
                 <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
-                  <span className="block xl:inline">Selamat datang di</span>{" "}
+                  <span className="block xl:inline">Selamat datang di </span>
                   <span className="block text-indigo-600 xl:inline">
                     siXeyes Company
                   </span>
@@ -61,7 +61,9 @@ export default function Dashboard() {
                 <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                   <div className="rounded-md shadow">
                     <a
-                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://wa.me/087826563459"
                       className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 md:py-4 md:px-10 md:text-lg"
                     >
                       Hubungi Kami
@@ -191,7 +193,10 @@ export default function Dashboard() {
         </div>
         <div className="m-10 flex flex-col justify-evenly sm:flex-row  ">
           {dataDummy.map((item) => (
-            <div className="w-full mt-5 rounded-lg shadow-md lg:max-w-sm translate ease-in-out delay-150 hover:translate-y-1 hover:scale-110 duration-300">
+            <div
+              key={item.id}
+              className="w-full mt-5 rounded-lg shadow-md lg:max-w-sm translate ease-in-out delay-150 hover:translate-y-1 hover:scale-110 duration-300"
+            >
               <img
                 className="object-cover w-full h-48"
                 src={item.imgSrc}
@@ -325,7 +330,7 @@ export default function Dashboard() {
             <div className="p-4 shadow">
               <div className="h-48 mb-2 overflow-hidden rounded-lg shadow-lg md:h-80">
                 <img
-                  src="https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166__340.jpg"
+                  src="/images/faisal-1.jpg"
                   alt="Image"
                   className="object-cover object-center w-full h-full"
                 />
@@ -336,7 +341,7 @@ export default function Dashboard() {
                   Amir Faisal K
                 </div>
                 <p className="mb-3 text-sm text-gray-500 md:text-base md:mb-4">
-                  CEO / Web & Mobile Developer
+                  CEO | Web & Mobile Developer
                 </p>
 
                 <div className="flex">
@@ -375,7 +380,7 @@ export default function Dashboard() {
             <div className="p-4 shadow">
               <div className="h-48 mb-2 overflow-hidden rounded-lg shadow-lg md:h-80">
                 <img
-                  src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445__340.jpg"
+                  src="/images/faruk.jpeg"
                   alt="Image"
                   className="object-cover object-center w-full h-full"
                 />
@@ -386,7 +391,7 @@ export default function Dashboard() {
                   Faruk Maulana
                 </div>
                 <p className="mb-3 text-sm text-gray-500 md:text-base md:mb-4">
-                  Web Developer / CTO
+                  Fullstack Web Developer
                 </p>
 
                 <div className="flex">
@@ -425,7 +430,7 @@ export default function Dashboard() {
             <div className="p-4 shadow">
               <div className="h-48 mb-2 overflow-hidden rounded-lg shadow-lg md:h-80">
                 <img
-                  src="https://cdn.pixabay.com/photo/2018/01/15/07/52/woman-3083401__340.jpg"
+                  src="/images/hendra.png"
                   alt="Image"
                   className="object-cover object-center w-full h-full"
                 />
@@ -436,7 +441,7 @@ export default function Dashboard() {
                   Hendrawan
                 </div>
                 <p className="mb-3 text-sm text-gray-500 md:text-base md:mb-4">
-                  Web / Mobile Developer
+                  Fullstack Web & Mobile Developer
                 </p>
 
                 <div className="flex">
@@ -475,7 +480,7 @@ export default function Dashboard() {
             <div className="p-4 shadow">
               <div className="h-48 mb-2 overflow-hidden rounded-lg shadow-lg md:h-80">
                 <img
-                  src="https://cdn.pixabay.com/photo/2018/01/15/07/52/woman-3083401__340.jpg"
+                  src="/images/fahrika.jpg"
                   alt="Image"
                   className="object-cover object-center w-full h-full"
                 />
@@ -483,7 +488,7 @@ export default function Dashboard() {
 
               <div className="flex flex-col items-center justify-center">
                 <div className="font-bold text-indigo-500 md:text-lg">
-                  Eka Fahrika
+                  Eka Fahrika N
                 </div>
                 <p className="mb-3 text-sm text-gray-500 md:text-base md:mb-4">
                   UI & UX Designer
@@ -525,7 +530,7 @@ export default function Dashboard() {
             <div className="p-4 shadow">
               <div className="h-48 mb-2 overflow-hidden rounded-lg shadow-lg md:h-80">
                 <img
-                  src="https://cdn.pixabay.com/photo/2018/01/15/07/52/woman-3083401__340.jpg"
+                  src="/images/tyo.png"
                   alt="Image"
                   className="object-cover object-center w-full h-full"
                 />
@@ -536,7 +541,7 @@ export default function Dashboard() {
                   Ardyas Setya
                 </div>
                 <p className="mb-3 text-sm text-gray-500 md:text-base md:mb-4">
-                  Graphic Designer / Social Media Management
+                  Graphic Designer & Social Media Specialist
                 </p>
 
                 <div className="flex">
@@ -581,4 +586,6 @@ export default function Dashboard() {
       </section>
     </div>
   );
-}
+};
+
+export default Dashboard;
