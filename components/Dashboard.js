@@ -430,7 +430,7 @@ const Dashboard = () => {
             <div className="p-4 shadow">
               <div className="h-48 mb-2 overflow-hidden rounded-lg shadow-lg md:h-80">
                 <img
-                  src="/images/hendra.png"
+                  src="/images/hendra.PNG"
                   alt="Image"
                   className="object-cover object-center w-full h-full"
                 />
@@ -480,7 +480,7 @@ const Dashboard = () => {
             <div className="p-4 shadow">
               <div className="h-48 mb-2 overflow-hidden rounded-lg shadow-lg md:h-80">
                 <img
-                  src="/images/fahrika.jpg"
+                  src="/images/fahrika.JPG"
                   alt="Image"
                   className="object-cover object-center w-full h-full"
                 />
@@ -530,7 +530,7 @@ const Dashboard = () => {
             <div className="p-4 shadow">
               <div className="h-48 mb-2 overflow-hidden rounded-lg shadow-lg md:h-80">
                 <img
-                  src="/images/tyo.png"
+                  src="/images/tyo.PNG"
                   alt="Image"
                   className="object-cover object-center w-full h-full"
                 />
