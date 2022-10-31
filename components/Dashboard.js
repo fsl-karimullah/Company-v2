@@ -63,7 +63,7 @@ const Dashboard = () => {
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
-                      href="https://wa.me/087826563459"
+                      href="https://wa.me/+6287826563459"
                       className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 md:py-4 md:px-10 md:text-lg"
                     >
                       Hubungi Kami
